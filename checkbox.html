@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            check box
+        </title>
+    </head>
+    <body>
+       Please select pro lang<br>
+                   <input type="checkbox" id="t1" >Java<br>
+                   <input type="checkbox" id="t2" >Java<br>
+                   <input type="checkbox" id="t3" >Java<br>
+                   <input type="checkbox" id="t4" >Java<br>
+                    <input type="button" id="btn" value="submit" onclick="validate()">
+        <script>
+            t1=document.getElementById("t1");
+            t2=document.getElementById("t2");
+            t3=document.getElementById("t3");
+            t4=document.getElementById("t4");
+            
+            function validate(){
+                flag=false
+                if(t1.checked==true){
+                    flag=true
+                }else if(t2.checked==true){
+                    flag=true
+                }else if(t3.checked==true){
+                    flag=true
+                }else if(t4.checked==true){
+                    flag=true
+                }if(flag==false){
+                    alert("select one pro lanf")
+                }
+                t2.value=parseInt(t1.value)*0.012796;
+                
+            }
+        </script>
+    </body>
+</html>
